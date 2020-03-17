@@ -1,0 +1,89 @@
+.profile__user-top {
+  padding: 50px;
+  background: var(--sixth);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & > * {
+    margin: 0 75px;
+  }
+
+  .avata__container {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.userProfile__container {
+  min-width: 400px;
+  padding: 20px;
+  .form__container {
+    flex-direction: column;
+    min-height: 400px;
+    & > * {
+      margin: 12.5px 0;
+    }
+  }
+
+  .form__name {
+    font-weight: bold;
+    font-size: 16px;
+
+    color: var(--first);
+  }
+
+  .input__container,
+  .password__container {
+    background: var(--third);
+    input {
+      color: var(--first);
+      &:focus-within {
+        &::placeholder {
+          color: var(--first);
+        }
+      }
+    }
+  }
+
+  .btn__container {
+    button {
+      background: var(--fifth);
+      color: var(--first);
+      &:active {
+        background: var(--third);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .profile__user-top {
+    flex-direction: column;
+    & > * {
+      margin: 0;
+    }
+
+    .avata__container {
+      max-width: 150px;
+      max-height: 150px;
+    }
+  }
+
+  .userProfile__container {
+    min-width: 350px;
+    padding: 20px;
+    .form__container {
+      flex-direction: column;
+      min-height: none;
+      & > * {
+        margin: 12.5px 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "mongodb": {
+    "url": "mongodb://localhost/art-store-project",
+    "options": { "useNewUrlParser": true, "useUnifiedTopology": true }
+  },
+  "host": {
+    "url": 4000
+  },
+  "bcrypt": {
+    "rounds": 4
+  },
+  "jwt": {
+    "secretKey": "334963972"
+  },
+  "multer": {
+    "url": "../frontend/public/images"
+  }
+}

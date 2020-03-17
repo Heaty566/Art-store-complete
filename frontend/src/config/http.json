@@ -1,0 +1,9 @@
+{
+  "url": "http://localhost:4000/api",
+  "endPoint": {
+    "genre": "/image/genre",
+    "user": "/user",
+    "image": "/image",
+    "imageUser": "/image/user"
+  }
+}

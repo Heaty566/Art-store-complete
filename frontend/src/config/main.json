@@ -1,0 +1,112 @@
+{
+  "navbar": {
+    "navbarMain": {
+      "navbarBrand": {
+        "label": "CYBERPUNK",
+        "urlImage": "/page/icon.png",
+        "url": "/image"
+      },
+      "searchBox": {
+        "url": "/page/icon/search.svg",
+        "urlSearch": "/image/search",
+        "limits": 5
+      },
+      "btnGroup": [
+        {
+          "label": "Login",
+          "url": "/user/login"
+        },
+        {
+          "label": "Register",
+          "url": "/user/register"
+        }
+      ],
+      "btnUser": {
+        "userUrl": "/user",
+        "addImage": "/user/image/addImage",
+        "logoutUrl": "/home"
+      }
+    },
+    "navbarExtra": {
+      "btnList": {
+        "url": "/image/genre"
+      }
+    }
+  },
+  "home": {
+    "jumbotron": [
+      {
+        "desktop": "/page/sliceshow/slice1.jpg",
+        "mobile": "/page/sliceshow/slice1-mobile.jpg"
+      },
+      {
+        "desktop": "/page/sliceshow/slice2.jpg",
+        "mobile": "/page/sliceshow/slice2-mobile.jpg"
+      },
+      {
+        "desktop": "/page/sliceshow/slice3.jpg",
+        "mobile": "/page/sliceshow/slice3-mobile.jpg"
+      },
+      {
+        "desktop": "/page/sliceshow/slice4.jpg",
+        "mobile": "/page/sliceshow/slice4-mobile.jpg"
+      },
+      {
+        "desktop": "/page/sliceshow/slice5.jpg",
+        "mobile": "/page/sliceshow/slice5-mobile.jpg"
+      }
+    ],
+    "product": {
+      "imageUrl": "/image"
+    }
+  },
+  "formCreator": {
+    "brand": {
+      "label": "CYBERPUNK",
+      "urlImage": "/page/icon.png",
+      "url": "/image"
+    },
+    "socialsNetwork": [
+      {
+        "brand": "snapchat",
+        "image": "/page/socialnetwork/snapchat.png",
+        "url": "#"
+      },
+      {
+        "brand": "facebook",
+        "image": "/page/socialnetwork/facebook.png",
+        "url": "#"
+      },
+      {
+        "brand": "twitter",
+        "image": "/page/socialnetwork/twitter.png",
+        "url": "#"
+      },
+      {
+        "brand": "youtube",
+        "image": "/page/socialnetwork/youtube.png",
+        "url": "#"
+      },
+      {
+        "brand": "microsoft",
+        "image": "/page/socialnetwork/microsoft.png",
+        "url": "#"
+      }
+    ]
+  },
+  "login": {
+    "forgotPasswordUrl": "/user/register",
+    "registerInstead": "/user/register"
+  },
+  "register": {
+    "loginInstead": "/user/login"
+  },
+  "formImage": {
+    "imageUrl": "/images"
+  },
+  "imageShow": {
+    "imageUrl": "/images",
+    "imageOrder": "/image",
+    "updateImageUrl": "/user/image/update"
+  }
+}

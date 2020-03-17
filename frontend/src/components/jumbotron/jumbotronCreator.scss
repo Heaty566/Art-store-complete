@@ -1,0 +1,71 @@
+.jumbotron__container {
+  height: 275px;
+  overflow: hidden;
+  position: relative;
+
+  .indicator__container {
+    position: absolute;
+    bottom: 10px;
+    height: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    .indicator__current {
+      span {
+        background-color: var(--second);
+      }
+    }
+
+    span {
+      display: block;
+      height: 20px;
+      width: 20px;
+      border-radius: 2px;
+
+      background-color: var(--first);
+    }
+  }
+}
+
+.sliceShow__container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  li {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 2s;
+    opacity: 0;
+  }
+
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  &-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .jumbotron__container {
+    height: 250px;
+  }
+  .sliceShow__container {
+    &-desktop {
+      display: none;
+    }
+    &-mobile {
+      display: block;
+    }
+  }
+}

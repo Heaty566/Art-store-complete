@@ -1,0 +1,491 @@
+//------------------------Global-Sytle-Setup-------------------------
+.form__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  .form__group {
+    width: 100%;
+  }
+
+  .form__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brand__container {
+    display: flex;
+    text-align: center;
+
+    a {
+      display: block;
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  //-------------------------------------------------------
+
+  .error__container {
+    font-size: 13px;
+    padding: 10px 16px;
+    border-radius: 1px;
+
+    color: var(--first);
+    background-color: var(--error);
+  }
+
+  //-------------------------------------------------------
+
+  .input__container {
+    border-radius: 1px;
+    overflow: hidden;
+    padding: 10px 16px;
+    input {
+      background: none;
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        transition: 0.2s ease-in-out;
+        font-size: 13px;
+      }
+
+      &:focus-within {
+        &::placeholder {
+          font-size: 14px;
+
+          color: var(--fourth);
+        }
+      }
+    }
+  }
+  //-------------------------------------------------------
+  .btnFunc__container {
+    & > div {
+      border-radius: 1px;
+      padding: 0 1;
+      font-size: 16px;
+      padding: 10px 16px;
+      display: block;
+      font-weight: 600;
+      width: 100%;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+  //-------------------------------------------------------
+
+  .password__container {
+    border-radius: 1px;
+    overflow: hidden;
+    padding: 10px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input {
+      background: none;
+      font-size: 14px;
+      width: 100%;
+      border: none;
+      outline: none;
+
+      &::placeholder {
+        transition: 0.2s ease-in-out;
+        font-size: 13px;
+      }
+
+      &:focus-within {
+        &::placeholder {
+          font-size: 14px;
+
+          color: var(--fourth);
+        }
+      }
+    }
+  }
+
+  //-------------------------------------------------------
+  .textArea__container {
+    background: var(--third);
+    padding: 5px;
+    textarea {
+      background: none;
+      transition: 0.5s ease-in-out;
+      overflow: hidden;
+      resize: none;
+      font-size: 14px;
+      width: 100%;
+      min-height: 300px;
+      padding: 10px;
+      text-indent: 5px;
+
+      outline: none;
+      border: none;
+      display: block;
+      &::placeholder {
+        transition: 0.5s ease-in-out;
+        font-size: 13px;
+      }
+      color: #8e8e8e;
+      &:focus-within {
+        color: var(--first);
+        &::placeholder {
+          font-size: 14px;
+          color: var(--first);
+        }
+      }
+    }
+    p {
+      text-align: end;
+      color: var(--first);
+      font-size: 12px;
+    }
+  }
+  //-------------------------------------------------------
+
+  .checkBox__container {
+    input {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      font-size: 14px;
+      align-items: center;
+
+      color: var(--first);
+    }
+
+    label:before {
+      content: "";
+      display: inline-block;
+      margin-right: 10px;
+      text-align: center;
+      line-height: 16px;
+      width: 16px;
+      height: 16px;
+
+      background: var(--third);
+    }
+
+    input[type="checkbox"]:checked + label {
+      &::before {
+        content: "\2713";
+      }
+    }
+  }
+
+  //-------------------------------------------------------
+
+  .link__container {
+    text-align: center;
+    a {
+      font-size: 14px;
+
+      color: var(--first);
+    }
+  }
+
+  //-------------------------------------------------------
+
+  .selectList__container {
+    border-radius: 1px;
+    padding: 10px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #8e8e8e;
+    background: none;
+    font-size: 13px;
+    transition: 0.2s ease-in-out;
+
+    &:focus-within {
+      font-size: 14px;
+      color: var(--first);
+      background: var(--second);
+    }
+  }
+
+  //-------------------------------------------------------
+  .selectFile__container {
+    input {
+      display: none;
+    }
+
+    label {
+      padding: 10px 16px;
+      font-size: 14px;
+      display: block;
+      color: #8e8e8e;
+    }
+  }
+
+  //-------------------------------------------------------
+
+  .btn__container {
+    button {
+      border-radius: 1px;
+      padding: 0 1;
+      font-size: 16px;
+      padding: 10px 16px;
+      display: block;
+      font-weight: 600;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+  }
+
+  //-------------------------------------------------------
+
+  .socials__container {
+    display: flex;
+    justify-content: space-between;
+
+    li,
+    a {
+      display: block;
+      border-radius: 5px;
+
+      background: var(--first);
+    }
+
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+//------------------Login-Setup-------------------------------
+
+.login__container {
+  width: 450px;
+  min-height: 558px;
+  display: flex;
+  border-radius: 1px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+
+  background: var(--sixth);
+  .form__group > * {
+    margin: 12.5px 0;
+  }
+
+  .brand__container {
+    justify-content: center;
+    a {
+      height: 64px;
+      width: 64px;
+    }
+  }
+
+  .form__name {
+    font-weight: bold;
+    font-size: 16px;
+
+    color: var(--first);
+  }
+
+  .input__container,
+  .password__container {
+    background: var(--third);
+    input {
+      color: var(--first);
+      &:focus-within {
+        &::placeholder {
+          color: var(--first);
+        }
+      }
+    }
+  }
+
+  .form__row .link__container {
+    text-align: end;
+  }
+
+  .btn__container {
+    button {
+      background: var(--fifth);
+      color: var(--first);
+      &:active {
+        background: var(--third);
+      }
+    }
+  }
+
+  .socials__container {
+    li,
+    a {
+      height: 50px;
+      width: 50px;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .login__container {
+    padding: 0 15px;
+    min-height: 100vh;
+    .brand__container {
+      display: none;
+    }
+
+    .form__name {
+      font-size: 16px;
+    }
+
+    .input__container,
+    .password__container {
+      input {
+        font-size: 14px;
+        &::placeholder {
+          font-size: 13px;
+        }
+        &:focus-within {
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .error__container {
+      font-size: 14px;
+    }
+
+    .form__row .link__container {
+      text-align: end;
+    }
+    .link__container {
+      a {
+        font-size: 14px;
+      }
+    }
+
+    .checkBox__container {
+      label {
+        font-size: 14px;
+      }
+
+      label:before {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+//------------------Register-Setup-------------------------------
+
+.register__container {
+  width: 450px;
+  min-height: 650px;
+  display: flex;
+  border-radius: 3px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px 50px;
+
+  background: var(--sixth);
+  .form__group > * {
+    margin: 12.5px 0;
+  }
+
+  .brand__container {
+    justify-content: flex-start;
+    a {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .form__name {
+    font-weight: bold;
+    font-size: 16px;
+
+    color: var(--first);
+  }
+
+  .input__container,
+  .password__container {
+    background: var(--third);
+    input {
+      color: var(--first);
+      &:focus-within {
+        &::placeholder {
+          color: var(--first);
+        }
+      }
+    }
+  }
+
+  .btn__container {
+    button {
+      background: var(--fifth);
+      color: var(--first);
+      &:active {
+        background: var(--third);
+      }
+    }
+  }
+
+  .socials__container {
+    li,
+    a {
+      height: 50px;
+      width: 50px;
+      display: block;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .register__container {
+    padding: 0 15px;
+    min-height: 100vh;
+
+    .brand__container {
+      display: none;
+    }
+
+    .form__name {
+      font-size: 16px;
+    }
+
+    .error__container {
+      font-size: 14px;
+    }
+
+    .input__container,
+    .password__container {
+      input {
+        font-size: 16px;
+        &::placeholder {
+          font-size: 14px;
+        }
+        &:focus-within {
+          &::placeholder {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .link__container {
+      a {
+        font-size: 16px;
+      }
+    }
+  }
+}

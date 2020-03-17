@@ -1,0 +1,19 @@
+//---------------Color--Schema------------------
+body[data-theme="dark"] {
+  --first: #fefefe;
+  --second: #333333;
+  --third: #3b3b3b;
+  --fourth: #121212;
+  --fifth: #121212;
+  --sixth: #202020;
+  --error: #f44336;
+}
+
+body[data-theme="dark-2"] {
+  --first: #fefefe;
+  --second: #909090;
+  --third: #121212;
+  --fourth: #3b3b3b;
+  --sixth: #202020;
+  --error: #f44336;
+}

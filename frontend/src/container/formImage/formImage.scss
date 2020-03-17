@@ -1,0 +1,111 @@
+.addImage__grid {
+  width: 90%;
+  min-height: 900px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 0;
+
+  .image__container {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+.addImage__container {
+  padding: 25px;
+  background: var(--sixth);
+  & > * {
+    margin-bottom: 20px;
+  }
+
+  .form__name {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+    color: var(--first);
+  }
+  .input__container {
+    background: var(--third);
+    input {
+      color: var(--first);
+      &:focus-within {
+        &::placeholder {
+          color: var(--first);
+        }
+      }
+    }
+  }
+
+  .selectList__container {
+    background: var(--third);
+  }
+
+  .selectFile__container {
+    background: var(--third);
+  }
+
+  .btn__container {
+    max-width: 200px;
+    button {
+      color: var(--first);
+      background: var(--third);
+      &:active {
+        background-color: var(--fourth);
+      }
+    }
+  }
+
+  .btnFunc__container {
+    max-width: 200px;
+    & > div {
+      color: var(--first);
+      background: var(--error);
+      &:active {
+        background-color: var(--fourth);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .addImage__grid {
+    width: 100%;
+    min-height: none;
+    max-height: 500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0;
+
+    .image__container {
+      padding: 10px 5px;
+    }
+
+    .form__name {
+      font-size: 16px;
+    }
+
+    .input__container {
+      input {
+        font-size: 14px;
+        &::placeholder {
+          font-size: 13px;
+        }
+        &:focus-within {
+          &::placeholder {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .error__container {
+      font-size: 14px;
+    }
+  }
+}

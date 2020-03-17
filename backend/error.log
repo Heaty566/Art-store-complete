@@ -1,0 +1,15 @@
+{
+  message: 'connect to mongodb failed',
+  level: 'error',
+  timestamp: '2020-03-11T10:05:15.492Z'
+}
+{
+  message: 'connect to mongodb failed',
+  level: 'error',
+  timestamp: '2020-03-11T10:06:01.236Z'
+}
+{
+  message: 'connect to mongodb failed',
+  level: 'error',
+  timestamp: '2020-03-11T10:06:07.308Z'
+}
